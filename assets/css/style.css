@@ -40,14 +40,29 @@ html, body {
 }
 /* Carousel Button */
 .btn {
-  background-color: white;
-  border: 1px solid white;
-  color: black;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #222;
 }
 .btn:hover {
-  background-color: black;
-  border: 1px solid black;
-  color: white;
+  background-color: #222;
+  border: 1px solid #222;
+  color: #ffffff;
+}
+.fun {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding-top: 2rem;
+}
+footer a {
+  color: #ffffff;
 }
 
 
