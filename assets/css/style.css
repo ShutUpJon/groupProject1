@@ -4,7 +4,72 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    color: #222
+    color: #222;
+   
+  }
+
+/*background image*/
+
+.pumpkinImage { 
+
+  background-image:url("assets/img/fixedimg.jpeg");
+  background-size:cover;
+  position: relative;
+}
+
+/* Navbar CSS */
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+  
+  
+
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.navbar-brand img {
+
+  height: 100px;
+  width: 300px;
+  border-radius: 50%;
+
+}
+
+/* Carousel CSS */
+.carousel-inner img {
+  height: 80%;
+  width: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+/* Carousel Button */
+.btn {
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+}
+.btn:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
 }
 
 
