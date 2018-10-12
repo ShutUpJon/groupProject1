@@ -72,7 +72,7 @@ html, body {
   color: #222;
 }
 .btn-toolbar {
- 
+ margin-left: 24%;
 }
 
 /*--- Movie/Recipie of the Month ---*/
@@ -129,6 +129,13 @@ footer {
 }
 footer a {
   color: #ffffff;
+}
+
+hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
 }
 
 /*---Firefox Bug Fix --*/
