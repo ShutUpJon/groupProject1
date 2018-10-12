@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,243 +13,335 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="text/javacript" href="assets/js/app.js">
-    
+
     <title>Dutch Treat</title>
 </head>
+
 <body>
 
-<!-- Navbar Section Here -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-<div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="assets/img/logo1.png"></a> <!--Logo Image Here-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Search</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Staff Picks</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Connect</a>
-            </li>
+    <!-- Navbar Section Here -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo1.png"></a>
+            <!--Logo Image Here-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Staff Picks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End Navbar Section-->
+
+    <!-- Carousel / Landing Page with Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
         </ul>
-    </div>
-</div>
-</nav><!--End Navbar Section-->
-
-<!-- Carousel / Landing Page with Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-<ul class="carousel-indicators">
-    <li data-target="#slides" data-slide-to="0"></li>
-    <li data-target="#slides" data-slide-to="1"></li>
-    <li data-target="#slides" data-slide-to="2"></li>
-</ul>
-<div class="carousel-inner">
-    <div class="carousel-item active">
-        <img src="assets/img/carousel.jpeg">
-        <div class="carousel-caption">
-            <h1 class="display-2">Dutch Treat</h1>
-            <h3>Dinner and a Movie at Your Fingertips</h3>
-            <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <img src="assets/img/carousel2.jpeg">
-    </div>
-    <div class="carousel-item">
-        <img src="assets/img/carousel3.jpeg">
-    </div>    
-</div>
-</div> <!-- End of Carousel / Landing Page with Image Slider -->
-
-<!-- Jumbotron / Search Genere/Cuisine Section Here -->
-<hr>
-<div>
-    This is the div for our genre buttons, and where the info will populate.
-</div>
-<hr><!-- End Jumbotron / Search Genere/Cuisine Section Here -->
-
-<!-- Recommended Movie and Meal of the Month -->
-<div class="container-fluid padding">
-<div class="row welcome text-center">
-    <div class="col-12">
-        <h1 class="display-4">Monthly Movie & Recipie Recommendations</h1>
-        <h3>It's October. The weather is cooling down. The creapy crawlies are coming out. Nothing sounds better than staying in and watching a movie. Take a look at our hand currated movie suggestions and hauntingly delicious recipie recommendations for the spookiest month of the year.</h3>
-    </div>
-</div>
-<hr>
-<div class="row padding">
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="assets/img/moviemonth.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Halloween:</h4>
-                <p class="card-text">Fifteen years after murdering his sister on Halloween night 1963, Michael Myers escapes from a mental hospital and returns to the small town of Haddonfield to kill again.</p>
-                <a href="#" class="btn btn-outline-secondary">See More Movies</a>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/carousel.jpeg">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Dutch Treat</h1>
+                    <h3>Dinner and a Movie at Your Fingertips</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">Get Started</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/carousel2.jpeg">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/carousel3.jpeg">
             </div>
         </div>
+
+    </div> <!-- End of Carousel / Landing Page with Image Slider -->
+
     </div>
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="assets/img/recipie.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">5 Ingredient Pumpkin Ice Cream Pie:</h4>
-                <p class="card-text">Ice cream pie with a simple gingersnap cookie crust and a drizzle of salted caramel sauce. This easy pie is the perfect Halloween dessert!</p>
-                <a href="#" class="btn btn-outline-secondary">See More Recipies</a>
+
+
+
+
+    <!-- Jumbotron / Search Genere/Cuisine Section Here -->
+    <hr>
+    <div>
+        This is the div for our genre buttons, and where the info will populate.
+    </div>
+    <hr><!-- End Jumbotron / Search Genere/Cuisine Section Here -->
+
+    <!-- Recommended Movie and Meal of the Month -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Monthly Movie & Recipie Recommendations</h1>
+                <h3>It's October. The weather is cooling down. The creapy crawlies are coming out. Nothing sounds better
+                    than staying in and watching a movie. Take a look at our hand currated movie suggestions and hauntingly
+                    delicious recipie recommendations for the spookiest month of the year.</h3>
             </div>
         </div>
-    </div>
-</div>
-</div>
-<!-- End Recommended Movie and Meal of the Month-->
-<hr class="my-4">
-<!-- Fixed Image Background -->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
-
-        </div>
-    </div>
-</figure> <!-- End Fixed Image Background -->
-
-<!-- Hidden Button / Staff Picks Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">Staff Picks</button>
-<div id="emoji" class="collapse">
-<div class="container-fluid padding">
-<div class="row text-center">
-    <div class="col-12">
-        <h1>Still Can't Decide What to Watch?</h1>
-        <h3>Take a look at our staff picks for the month of October.</h3>
-    </div>
-    <div class="col-sm-6 col-md-3">
-        <img class="gif" src="assets/img/gif/poo.gif">
-        <h3>Jon's Pick</h3>
         <hr>
-        <div class="card">
-            <img class="card-img-top" src="assets/img/staffpick1.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Office Space:</h4>
-                <p class="card-text">Three company workers who hate their jobs decide to rebel against their greedy boss. From Mike Judge, the creator of Silicon Valley.</p>
-                <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+        <div class="row padding">
+            <div class="col-md-6">
+                <div class="card1">
+                    <img class="card-img-top" src="assets/img/moviemonth.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">Halloween:</h4>
+                        <p class="card-text">Fifteen years after murdering his sister on Halloween night 1963, Michael Myers
+                            escapes from a mental hospital and returns to the small town of Haddonfield to kill again.</p>
+                        <a href="#" class="btn btn-outline-secondary">See More Movies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card1">
+                    <img class="card-img-top" src="assets/img/recipie.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">5 Ingredient Pumpkin Ice Cream Pie:</h4>
+                        <p class="card-text">Ice cream pie with a simple gingersnap cookie crust and a drizzle of salted
+                            caramel sauce. This easy pie is the perfect Halloween dessert!</p>
+                        <br />
+                        <a href="#" class="btn btn-outline-secondary">See More Recipies</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-        <img class="gif" src="assets/img/gif/unicorn.gif">
-        <h3>Steve's Pick</h3>
+    <!-- End Recommended Movie and Meal of the Month-->
+    <hr class="my-4">
+    <!-- Fixed Image Background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure> <!-- End Fixed Image Background -->
+
+    <!-- Hidden Button / Staff Picks Section -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">Staff Picks</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>Still Can't Decide What to Watch?</h1>
+                    <h3>Take a look at our staff picks for the month of October.</h3>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/img/gif/poo.gif">
+                    <h3>Jon's Pick</h3>
+                    <hr>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/staffpick1.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Office Space:</h4>
+                            <p class="card-text">Three company workers who hate their jobs decide to rebel against their
+                                greedy boss. From Mike Judge, the creator of Silicon Valley.</p>
+                            <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/img/gif/unicorn.gif">
+                    <h3>Steve's Pick</h3>
+                    <hr>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/staffpick2.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">The Big Lebowski:</h4>
+                            <p class="card-text">Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks
+                                restitution for his ruined rug and enlists his bowling buddies to help get it.</p>
+                            <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/img/gif/panda.gif">
+                    <h3>Max's Pick</h3>
+                    <hr>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/staffpick3.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Pulp Fiction:</h4>
+                            <p class="card-text">The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner
+                                bandits intertwine in four tales of violence and redemption..</p>
+                            <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="assets/img/gif/chicken.gif">
+                    <h3>Alan's Pick</h3>
+                    <hr>
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/staffpick4.jpeg">
+                        <div class="card-body">
+                            <h4 class="card-title">Shawshank Redemption:</h4>
+                            <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual
+                                redemption through acts of common decency.</p>
+                            <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <hr>
-        <div class="card">
-            <img class="card-img-top" src="assets/img/staffpick2.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">The Big Lebowski:</h4>
-                <p class="card-text">Jeff "The Dude" Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.</p>
-                <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+    </div> <!-- End Hidden Button / Staff Picks Section -->
+
+
+    <!-- Community Members / Spotlight Section -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Community Members</h1>
+                <hr>
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-3">
-        <img class="gif" src="assets/img/gif/panda.gif">
-        <h3>Max's Pick</h3>
-        <hr>
-        <div class="card">
-            <img class="card-img-top" src="assets/img/staffpick3.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Pulp Fiction:</h4>
-                <p class="card-text">The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption..</p>
-                <a href="#" class="btn btn-outline-secondary">See More Picks</a>
+    <!-- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/community1.jpeg">
+                    <!--Need Image -->
+                    <div class="card-body">
+                        <h4 class="card-title">Fred</h4>
+                        <p class="card-text">Action Packed Rocks! The Dead Pool-Predator-Hellfest! Chianti and Pasta to follow.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/community2.jpeg">
+                    <!--Need Image -->
+                    <div class="card-body">
+                        <h4 class="card-title">Tina</h4>
+                        <p class="card-text">Darker the better. Jacobs Ladder-21 Grams-Sin City with fresh Sushi!</p>
+                        <br />
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/community3.jpeg">
+                    <!--Need Image -->
+                    <div class="card-body">
+                        <h4 class="card-title">Ethan</h4>
+                        <p class="card-text">Marvel Buff. Infiniti Wars - Guardians of the Galaxy - Black Panther and a Lobster</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/community4.jpeg">
+                    <!--Need Image -->
+                    <div class="card-body">
+                        <h4 class="card-title">Linda</h4>
+                        <p class="card-text">Lives on the edge - Reservior Dogs - Kill Bill - Inglorious Bastards with a
+                            Puttanesca </p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-sm-6 col-md-3">
-        <img class="gif" src="assets/img/gif/chicken.gif">
-        <h3>Alan's Pick</h3>
-        <hr>
-        <div class="card">
-            <img class="card-img-top" src="assets/img/staffpick4.jpeg">
-            <div class="card-body">
-                <h4 class="card-title">Shawshank Redemption:</h4>
-                <p class="card-text">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
-                <a href="#" class="btn btn-outline-secondary">See More Picks</a>
-            </div>
+    </div> <!-- End Community member Spotlight -->
+
+    <!-- Our Philosophy Section -->
+    <hr>
+    <div class="row padding text-center" id="row">
+        <div class="col-md-12 col-lg-12">
+            <h1>Our Philosophy</h1>
+            <p>You enjoy movies. We enjoy providing you a hassle free experience at your fingertips. Combined with local
+                restaurant eats that Rock! </p>
+            <p>Take the disruption out of the search. You're tired. You want some decompressing and down time.</p>
+            <p>Pick a movie genre and we'll provide the recommended cuisine! And it can be delivered right to your doorstep.</p>
+            <p>Sit back. Enjoy some you time. You've earned it! </p>
+            <br>
         </div>
     </div>
-</div>
-</div>
-<hr>
-</div> <!-- End Hidden Button / Staff Picks Section -->
+    <hr>
+
+    <!-- Connect / Social Newtork -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect With Us</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div> <!-- End Connect / Social Newtork -->
 
 
-<!-- Highlight Community Members / Spotlight Section -->
-
-
-<!-- Our Philosophy Section -->
-
-
-<!-- Connect / Social Newtork -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
-    <div class="col-12">
-        <h2>Connect With Us</h2>
-    </div>
-    <div class="col-12 social padding">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-</div>
-<hr class="my-4">
-</div> <!-- End Connect / Social Newtork -->
-
-
-<!-- Footer Section w/ Contact Info etc -->
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-    <div class="col-md-4">
-        <img src="assets/img/logo2.png">
-        <hr class="light">
-        <p>555-555-5555</p>
-        <p>email@email.com</p>
-        <p>100 Street Name</p>
-        <p>City, State, Zip</p>
-    </div>
-    <div class="col-md-4">
-        <hr class="light">
-        <h5>Our Hours</h5>
-        <hr class="light">
-        <p>#</p>
-        <p>#</p>
-        <p>#</p>
-    </div>
-    <div class="col-md-4">
-        <hr class="light">
-        <h5>Service Area</h5>
-        <hr class="light">
-        <p>#</p>
-        <p>#</p>
-        <p>#</p>
-        <p>#</p>
-        <p>#</p>
-    </div>
-    <div class="col-12">
-        <hr class="light-100">
-        <h5>&copy DutchTreat.com</h5>
-    </div>
- </div>
-</div>
-</footer> <!-- End Footer Section w/ Contact Info etc -->
+    <!-- Footer Section w/ Contact Info etc -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="assets/img/logo2.png">
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>email@email.com</p>
+                    <p>100 Street Name</p>
+                    <p>City, State, Zip</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our Hours</h5>
+                    <hr class="light">
+                    <p>#</p>
+                    <p>#</p>
+                    <p>#</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Service Area</h5>
+                    <hr class="light">
+                    <p>#</p>
+                    <p>#</p>
+                    <p>#</p>
+                    <p>#</p>
+                    <p>#</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy DutchTreat.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- End Footer Section w/ Contact Info etc -->
 
 </body>
+
 </html>
