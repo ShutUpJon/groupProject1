@@ -266,7 +266,7 @@ $(document).ready(function () {
             
              $('#rTitle').html('<h3>' + recTitle);
              $('#rPicture').html("<img src='" + recPicture + "'>")
-             $('#rLink').html('<h3> <a href=' + recSource + '> recepie link</h3>')
+             $('#rLink').html('<h3> <a href=' + recSource + "'> recepie linkv</a></h3>'")
              
              
 
