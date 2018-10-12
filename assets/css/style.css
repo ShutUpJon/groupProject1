@@ -6,15 +6,6 @@ html, body {
     font-family: 'Roboto', sans-serif;
     color: #222;
    
-  }
-
-/*background image*/
-
-.pumpkinImage { 
-
-  background-image:url("assets/img/fixedimg.jpeg");
-  background-size:cover;
-  position: relative;
 }
 
 /*--- Navbar ---*/
@@ -23,26 +14,18 @@ html, body {
 }
 .navbar-nav li {
   padding-right: 20px;
-  
-  
-
 }
 .nav-link {
   font-size: 1.1em !important;
 }
 
-/*--- Carousel ---*/
-
-
 .navbar-brand img {
-
   height: 100px;
   width: 300px;
   border-radius: 50%;
-
 }
 
-/* Carousel CSS */
+/*--- Carousel ---*/
 
 .carousel-inner img {
   height: 80%;
@@ -68,7 +51,7 @@ html, body {
   max-height: 100%;
   width: 100%;
 }
-/*--- Buttons ---*/
+/*--- Buttons Section ---*/
 
 /*--- Carousel Button ---*/
 .btn-outline-light {
@@ -92,6 +75,13 @@ html, body {
   border: 1px solid #fff;
   color: #222;
 }
+
+/*--- Movie/Recipie of the Month ---*/
+.card1 {
+  padding: 3.5rem;
+  text-align: center;
+}
+
 /*--- Hidden Section / Staff Picks ---*/
 .fun {
   width: 100%;
@@ -127,7 +117,11 @@ html, body {
 .fa-youtube:hover {
   color: #d5d5d5;
 }
-
+/*--- Our Philosophy ---*/
+#row {
+  background-color: #222;
+  color: #fff;
+}
 
 
 
@@ -179,7 +173,7 @@ footer a {
     height: 100%;
   }
   #fixed {
-    background-image: url('assets/img/fixedimg.jpeg'); /*Dont forget image here */
+    background-image: url('assets/img/fixedimg.png'); /*Dont forget image here */
     position: fixed;
     display: block;
     top: 0;
