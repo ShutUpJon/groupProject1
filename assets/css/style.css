@@ -71,6 +71,9 @@ html, body {
   border: 1px solid #fff;
   color: #222;
 }
+.btn-toolbar {
+ 
+}
 
 /*--- Movie/Recipie of the Month ---*/
 .card1 {
