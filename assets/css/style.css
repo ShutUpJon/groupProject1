@@ -139,6 +139,10 @@ hr {
   margin-bottom: 1rem;
 }
 
+.a:link {
+  color: #222;
+}
+
 /*---Media Queries---*/
 @media (max-width: 992px) {
   .social a {
