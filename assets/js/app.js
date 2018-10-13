@@ -140,6 +140,7 @@ $(document).ready(function () {
                 method: 'GET'
             })
             .then(function (response) {
+                console.log(response)
 
                 //tells us if a movie is available to stream or purchase
                 sources = response.subscription_web_sources;
@@ -180,12 +181,13 @@ $(document).ready(function () {
     }
     var buy = function () {
         if (buySource.length >= 1) {
-            $('#paySource').append('<div> <h4>Availible to buy on these platforms: </h4>')
+            $('#paySource').html('<div> <h4>Availible to buy on these platforms: </h4>')
             for (i = 0; i < buySource.length; i++) {
-                $('#paySource').append('<h5' + buySource[i].display_name + ' ' + '</h5>')
+                $('#paySource').append('<h5>' + buySource[i].display_name + ' ' + '</h5>')
+                console.log(buySource[i])
             }
 
-        } else {
+        } else if (buySource.length == 0) {
             $('#paySource').html('<h5> Not Available to Buy </h5>')
         }
     }
