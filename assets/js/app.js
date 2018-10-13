@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     apiKey = '?api_key=97c224dd5db58f2523008853d7a9ab0e' // movie database api
     var apikey2 = '365c1fdb8aa274ecaf246e9a03b21bb6abc644f9' //box api
-    var apikey3 = '904109efcda6bbf01a52354a86037916' //food to fork api
+    var apikey3 = '193785c10ff72a7878278ffa90b0bf5b' //food to fork api
     url = 'https://api.themoviedb.org/3'
     var newId;
     test3 = 'https://api.themoviedb.org/3/discover/movie'
@@ -248,7 +248,7 @@ $(document).ready(function () {
 
                 $('#recipieTitle').html('<h4>' + recTitle + '</h4>');
                 $('#recipiePicture').html("<img style = 'height: 325px' src='" + recPicture + "'>")
-                $('#recipieLink').html("<h4>   <a style: ' color: #222' href=" + recSource + "'> " + recSource+ "</a></h3>'")
+                $('#recipieLink').html("<h4>   <a class='a' style: ' color: #222' href=" + recSource + "'> " + recSource+ "</a></h3>")
                 $('#recipieBtn').html("<button class = 'btn btn-outline-secondary reset'> Try Again </button>")
 
 
