@@ -80,16 +80,20 @@ $(document).ready(function () {
             })
             .then(function (response) {
                 results1 = response.results;
-                
+                score = results1[ranAr].vote_average;
+                title = results1[ranAr].title;
+                summary = results1[ranAr].overview;
+                poster = "<img src = 'http://image.tmdb.org/t/p/w185/" + results1[ranAr].poster_path + "'>"
                 //gives us title will be put on a div on the page
-                if (results1[ranAr].title != undefined) {
-                    title = results1[ranAr].title;
+                if (results1[ranAr].title != undefined && (score >= 6)) {
+                   
                     //gives us summary ^*
-                    summary = results1[ranAr].overview;
+                    
                     //give us a score^*
-                    score = results1[ranAr].vote_average;
+                   
+                    console.log(score)
 
-                    poster = "<img src = 'http://image.tmdb.org/t/p/w185/" + results1[ranAr].poster_path + "'>"
+                    
                 } 
                 else if (results1[ranAr].title == undefined) {
                     genreSearch()
@@ -153,8 +157,7 @@ $(document).ready(function () {
                 $('#loading').empty();
                 $('#rloading').empty();
 
-
-                recepieSearch();
+              recepieSearch();
                 subscribe();
                 buy();
                 //recepieSearch();
@@ -169,7 +172,7 @@ $(document).ready(function () {
         if (sources.length >= 1) {
             $('#freeSource').html('<div> <h4> Availible to stream on these platforms: </h4>')
             for (i = 0; i < sources.length; i++) {
-                $('#freeSource').append(sources[i].display_name)
+                $('#freeSource').append('<h5>' + sources[i].display_name + ' ' + '</h5>')
             }
         } else {
             $('#freeSource').html('<h5> Not Availible on Streaming </h5>')
@@ -179,7 +182,7 @@ $(document).ready(function () {
         if (buySource.length >= 1) {
             $('#paySource').append('<div> <h4>Availible to buy on these platforms: </h4>')
             for (i = 0; i < buySource.length; i++) {
-                $('#paySource').append(buySource[i].display_name + ' ')
+                $('#paySource').append('<h5' + buySource[i].display_name + ' ' + '</h5>')
             }
 
         } else {
@@ -248,7 +251,7 @@ $(document).ready(function () {
 
                 $('#recipieTitle').html('<h4>' + recTitle + '</h4>');
                 $('#recipiePicture').html("<img style = 'height: 325px' src='" + recPicture + "'>")
-                $('#recipieLink').html("<h4>   <a style: ' color: #222' href=" + recSource + "'> " + recSource+ "</a></h3>'")
+                $('#recipieLink').html("<h4>   <a class='a' style: ' color: #222' href=" + recSource + "'> " + recSource+ "</a></h3>")
                 $('#recipieBtn').html("<button class = 'btn btn-outline-secondary reset'> Try Again </button>")
 
 
