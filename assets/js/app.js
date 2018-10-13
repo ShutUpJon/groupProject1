@@ -34,12 +34,16 @@ $(document).ready(function () {
         $('#movieTitle').empty();
         $('#movieDisc').empty();
         $('#moviePoster').html("<img src= 'assets/img/gif/tenor.gif'>");
+        $('#loading').html('<h4>Loading</h4>')
         $("#movieRating").empty();
         $('#recipieTitle').empty();
         $('#recipiePicture').html("<img src = 'assets/img/gif/tenor.gif'>");
+        $('#rloading').html('<h4>Loading</h4>')
         $('#recipieLink').empty();
         $('#freeSource').empty();
-        $('#paySource').empty()
+        $('#paySource').empty();
+        $('#recipieBtn').empty();
+       
 
         //sets a genre code for the ajax request
         if (genre == 'action') {
@@ -145,7 +149,9 @@ $(document).ready(function () {
                 $('#movieTitle').html('<h4>' + title + '</h4>');
                 $('#movieDisc').html(summary)
                 $('#movieRating').html('Average rating: ' + score)
-                $('#moviePoster').html(poster)
+                $('#moviePoster').html(poster);
+                $('#loading').empty();
+                $('#rloading').empty();
 
 
                 recepieSearch();
