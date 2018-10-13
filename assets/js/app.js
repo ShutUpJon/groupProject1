@@ -109,7 +109,7 @@ $(document).ready(function () {
     }
 
     var guideBox = function () {
-        url2 = 'http://api-public.guidebox.com/v2/search?api_key=' + apikey2 + '&type=movie&field=title&query=' + title
+        url2 = 'https://api-public.guidebox.com/v2/search?api_key=' + apikey2 + '&type=movie&field=title&query=' + title
         $.ajax({
                 url: url2,
                 method: 'GET'
@@ -133,7 +133,7 @@ $(document).ready(function () {
     }
     
     var guideBoxSearch = function () {
-        url3 = 'http://api-public.guidebox.com/v2/movies/' + newId + '?api_key=' + apikey2;
+        url3 = 'https://api-public.guidebox.com/v2/movies/' + newId + '?api_key=' + apikey2;
 
         $.ajax({
                 url: url3,
