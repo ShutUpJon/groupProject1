@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     apiKey = '?api_key=97c224dd5db58f2523008853d7a9ab0e' // movie database api
     var apikey2 = '365c1fdb8aa274ecaf246e9a03b21bb6abc644f9' //box api
-    var apikey3 = '904109efcda6bbf01a52354a86037916' //food to fork api
+    var apikey3 = '193785c10ff72a7878278ffa90b0bf5b' //food to fork api
     url = 'https://api.themoviedb.org/3'
     var newId;
     test3 = 'https://api.themoviedb.org/3/discover/movie'
@@ -140,6 +140,7 @@ $(document).ready(function () {
                 method: 'GET'
             })
             .then(function (response) {
+                console.log(response)
 
                 //tells us if a movie is available to stream or purchase
                 sources = response.subscription_web_sources;
@@ -180,12 +181,13 @@ $(document).ready(function () {
     }
     var buy = function () {
         if (buySource.length >= 1) {
-            $('#paySource').append('<div> <h4>Availible to buy on these platforms: </h4>')
+            $('#paySource').html('<div> <h4>Availible to buy on these platforms: </h4>')
             for (i = 0; i < buySource.length; i++) {
-                $('#paySource').append('<h5' + buySource[i].display_name + ' ' + '</h5>')
+                $('#paySource').append('<h5>' + buySource[i].display_name + ' ' + '</h5>')
+                console.log(buySource[i])
             }
 
-        } else {
+        } else if (buySource.length == 0) {
             $('#paySource').html('<h5> Not Available to Buy </h5>')
         }
     }
