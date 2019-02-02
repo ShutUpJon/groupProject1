@@ -2,7 +2,7 @@
 
 Dinner and a Movie at your finger tips!
 
-View the project ![here](https://shutupjon.github.io/groupProject1/)
+View the project [here!](https://shutupjon.github.io/groupProject1/)
 
 ## Overview
 
